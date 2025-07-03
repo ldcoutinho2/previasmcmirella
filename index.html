@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRÉVIAS DA MIRELLA 🔥</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+    .banner {
+      max-width: 100%;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+    .card {
+      background-color: #111;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff7c33;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #ff7c33;
+      color: #fff;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #e85c0f;
+    }
+    .countdown {
+      font-size: 16px;
+      color: #ff7c33;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img src="banner.png" class="banner" alt="Prévia da MC Mirella" />
+
+  <div class="card">
+    <h2>🚨 VENHA PRO MEU GRUPO DE PRÉVIAS AMOR</h2>
+    <p>
+      Conteúdo do Privacy, chamada secreta e vídeos que somem em 24h. <br />
+      Só tá liberado pra quem entrou no grupo...<br /><br />
+      👀 Já tem gente printando tudo.
+    </p>
+    <div class="countdown">⏳ Link some em: <span id="timer">04:59</span></div>
+  </div>
+
+  <a href="https://t.me/nathyputinhabot?start=cmanggtvt59rytb0sftbzsa0s" class="btn">🔥 ENTRAR NO GRUPO DE PRÉVIAS</a>
+
+  <script>
+    let seconds = 299;
+    const timerEl = document.getElementById("timer");
+    setInterval(() => {
+      const m = String(Math.floor(seconds / 60)).padStart(2, '0');
+      const s = String(seconds % 60).padStart(2, '0');
+      timerEl.textContent = `${m}:${s}`;
+      if (seconds > 0) seconds--;
+    }, 1000);
+  </script>
+</body>
+</html>
